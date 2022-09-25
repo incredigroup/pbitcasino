@@ -1,0 +1,25 @@
+// header component style
+.header-container {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+    // header container style
+    .MuiContainer-root {
+        display: flex;
+        height: 100px;
+        align-items: center;
+        transition: all 0.3s;
+        background-color: transparent;
+    }
+}
+
+// Responsive CSS
+@media only screen and (max-width: 768px) {
+    .header-container {
+        .MuiContainer-root {
+            background-color: #3c2057;
+        }
+    }
+}

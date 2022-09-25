@@ -1,0 +1,153 @@
+.main-container {
+    padding: 100px 0px 50px 0px;
+    background-color: var(--primary-bg-color);
+    min-height: calc(100vh - 100px);
+    height: calc(100vh - 100px);
+    position: relative;
+    // loading box style
+    .loading-box {
+        position: absolute !important;
+        left: 50vw;
+        top: 50vh;
+        transform: translate(-50%, -50%);
+    }
+    .MuiContainer-root {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        // right side background style
+        .bg-slash-img {
+            position: absolute;
+            right: -300px;
+            top: 0px;
+            height: 100%;
+            width: auto;
+        }
+        // middle figure style
+        .bg-figure-img {
+            position: absolute;
+            width: 360px;
+            bottom: 0px;
+            left: calc(50% - 180px);
+        }
+        // left side box style
+        .aside-left {
+            width: 400px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            padding: 20px 0px;
+            // left side title style
+            .MuiTypography-h4 {
+                font-size: 40px;
+                margin-bottom: 10px;
+            }
+            // left side subtitle style
+            >.MuiTypography-body1 {
+                width: 80%;
+                font-size: 18px;
+                margin-bottom: 45px;
+                color: gray;
+            }
+            // left side list item icon style
+            .css-cveggr-MuiListItemIcon-root {
+                min-width: 70px;
+            }
+        }
+        // cryptocurrency code box style
+        .aside-right {
+            width: 350px;
+            padding: 30px;
+            position: relative;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            border-radius: 5px;
+            // cryptocurrency code box description style
+            .MuiTypography-body1 {
+                padding: 30px 10px;
+                font-size: 13px;
+                color: gray;
+            }
+            // Add button style
+            .MuiButton-root {
+                margin-top: 10px;
+                background-color: var(--second-color);
+                border-radius: 20px;
+                text-transform: none;
+                // Add button style when mouse hover
+                &:hover {
+                    background-color: #f75b38;
+                }
+            }
+            // Cryptocurrency code input style
+            .MuiOutlinedInput-input {
+                font-weight: bold;
+            }
+            // Cryptocurrency code input style when focused
+            .Mui-focused {
+                .MuiOutlinedInput-notchedOutline {
+                    border-color: var(--second-color);
+                }
+
+                &.MuiInputLabel-root {
+                    color: var(--second-color);
+                }
+            }
+        }
+        // close-icon in left side list style
+        .MuiIconButton-edgeEnd {
+            color: gray;
+        }
+        // Left side list style
+        .MuiList-root {
+            width: 70%;
+            height: calc(100vh - 480px);
+            overflow: auto;
+        }
+        // Left side list text style
+        .MuiListItemText-secondary {
+            color: #68517F;
+        }
+        // Left side list items bottom line style
+        .border-bottom-gradient {
+            height: 1.5px;
+            background-image: linear-gradient(45deg, gray, transparent);
+            border: none;
+            margin: 0;
+        }
+    }
+}
+// Responsive CSS
+@media only screen and (max-width: 768px) {
+    .main-container {
+        height: auto;
+        // reset flex direction for responsive
+        .MuiContainer-root {
+            flex-direction: column;
+        }
+        // reset width of left side box for responsive
+        .aside-left {
+            width: 90vw !important;
+
+            .MuiList-root {
+                width: 100%;
+            }
+        }
+        // right side background style
+        .bg-slash-img {
+            top: 100px !important;
+            height: 500px !important;
+        }
+        // middle figure style
+        .bg-figure-img {
+            bottom: 290px !important;
+            width: 300px !important;
+            left: calc(100% - 350px) !important;
+        }
+        // reset width of cryptocurrency code box for responsive
+        .aside-right {
+            width: 90vw !important;
+        }
+    }
+}

@@ -1,0 +1,74 @@
+:root {
+    --second-dark-color: #000319;
+    --primary-btn-color: #47E7F5;
+    --primary-color: #00BF73;
+    --second-color: #FD4B24;
+    --primary-bg-color: #2A0A4A;
+    --second-bg-color: rgba(255, 255, 255, 0.2);
+    --border-color: rgba(0, 0, 0, 0.2);
+}
+
+.App {
+    overflow-x: hidden;
+    color: white;
+    user-select: none;
+}
+
+.container {
+    padding: 84px;
+}
+
+* {
+    box-sizing: border-box;
+    outline: none !important;
+}
+
+:focus-visible {
+    outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0px;
+    margin: 0px;
+}
+
+input,
+button {
+    border: none;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+// Custom ScrollBar
+
+::-webkit-scrollbar {
+    width: 5px;
+    transition: all 0.3s;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.39);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #39155e;
+    transition: all 0.5s;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4f227c;
+}
